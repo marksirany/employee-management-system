@@ -1,0 +1,29 @@
+{
+  "name": "employee-management-system",
+  "version": "1.0.0",
+  "description": "In this homework assignment, your challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marksirany/employee-management-system.git"
+  },
+  "author": "Mark Sirany",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marksirany/employee-management-system/issues"
+  },
+  "homepage": "https://github.com/marksirany/employee-management-system#readme",
+  "dependencies": {
+    "inquirer": "^7.0.1",
+    "mysql2": "^2.0.2",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1"
+  }
+}
