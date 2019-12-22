@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/marksirany/employee-management-system#readme",
   "dependencies": {
+    "console.table": "^0.10.0",
     "inquirer": "^7.0.1",
     "mysql": "^2.17.1",
     "mysql2": "^2.0.2",
