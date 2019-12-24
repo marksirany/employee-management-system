@@ -124,12 +124,12 @@ function addDepartment() {
       {
         name: "id",
         type: "input",
-        message: "What is the DEPT. ID of the department you would like to add?"
+        message: "Enter the ID for the department you want to add:"
       },
       {
         name: "name",
         type: "input",
-        message: "What is the name of the department you would like to add?"
+        message: "Enter the name of the department you want to add:"
       }
     ])
     .then(function (res) {
@@ -142,7 +142,7 @@ function addDepartment() {
         },
         function (err) {
           if (err) throw err;
-          console.log("Your department was created!\n");
+          console.log("Your department has been created\n");
           // re-prompt the user 
           runPrompt();
         }
@@ -158,22 +158,22 @@ function addRole() {
       {
         name: "id",
         type: "input",
-        message: "What is the ROLE ID of the role you would like to add?"
+        message: "Enter the ROLE ID of the role you want to add:"
       },
       {
         name: "title",
         type: "input",
-        message: "What is the title of the role you would like to add?"
+        message: "Enter the title of the role you want to add:"
       },
       {
         name: "salary",
         type: "input",
-        message: "What is the annual salary of the role you would like to add?"
+        message: "Enter the annual salary of the role you want to add:"
       },
       {
         name: "departmentid",
         type: "input",
-        message: "What is the DEPT ID of the role you would like to add?"
+        message: "Enter the DEPT ID of the role you want to add:"
       }
     ])
     .then(function (res) {
@@ -187,7 +187,7 @@ function addRole() {
         },
         function (err) {
           if (err) throw err;
-          console.log("Your role was created!\n");
+          console.log("Your role has been created\n");
           // return to prompt
           runPrompt();
         }
@@ -203,27 +203,27 @@ function addEmployee() {
       {
         name: "id",
         type: "input",
-        message: "What is the EMPLOYEE ID of the employee you would like to add?"
+        message: "Enter the EMPLOYEE ID of the employee you want to add:"
       },
       {
         name: "firstname",
         type: "input",
-        message: "What is the first name of the employee you would like to add?"
+        message: "Enter the first name of the employee you want to add:"
       },
       {
         name: "lastname",
         type: "input",
-        message: "What is the last name of the employee you would like to add?"
+        message: "Enter the last name of the employee you want to add:"
       },
       {
         name: "roleid",
         type: "input",
-        message: "What is the ROLE ID of the employee you would like to add?"
+        message: "Enter the ROLE ID of the employee you want to add:"
       },
       {
         name: "managerid",
         type: "input",
-        message: "If your employee has a manager, please enter their EMPLOYEE ID. If no manager exists, enter 0." // need to fix this so entering 0 isn't required
+        message: "If your employee has a manager, enter their EMPLOYEE ID. If no manager exists, enter 0." 
       }
 
     ])
@@ -239,7 +239,7 @@ function addEmployee() {
         },
         function (err) {
           if (err) throw err;
-          console.log("Your employee was created!\n");
+          console.log("Your employee was created\n");
           // return to prompt
           runPrompt();
         }
@@ -255,13 +255,13 @@ function updateEmployee() {
     {
       name: "employee",
       type: "input",
-      message: "Enter the ID of the employee you'd like to update"
+      message: "Enter the ID of the employee you would like to update:"
 
     },
     {
       name: "newemployee",
       type: "input",
-      message: "Enter the updated employee ROLE ID"
+      message: "Enter the updated employee ROLE ID:"
 
     }
   ]).then(function (res) {
