@@ -27,6 +27,7 @@ connection.connect(function (err) {
 });
 
 //CREATE MAIN MENU PROMPT//
+//got help from Jake, Patrick, and Michael's code//
 
 function runPrompt() {
   inquirer
